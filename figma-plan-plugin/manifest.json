@@ -1,0 +1,8 @@
+{
+  "name": "한살림 기획서 만들기",
+  "id": "hansalim-plan-deck-local",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": ["figma"],
+  "documentAccess": "dynamic-page"
+}

@@ -1,0 +1,3048 @@
+{
+  "meta": {
+    "siteName": "한살림 임산부꾸러미",
+    "currency": {
+      "code": "KRW",
+      "symbol": "원"
+    },
+    "imageExtension": ".png",
+    "isSample": true,
+    "sampleNotice": "포트폴리오용으로 제작한 사이트입니다. 물품 정보와 사진은 한살림 임산부꾸러미에서 가져왔으며, 할인·타임딜·후기·일부 가격은 디자인 예시입니다.",
+    "updatedAt": "2026-11-04"
+  },
+  "categories": [
+    {
+      "id": "deal",
+      "label": "알뜰",
+      "icon": "/images/icons-1.png"
+    },
+    {
+      "id": "rice",
+      "label": "쌀/잡곡",
+      "icon": null,
+      "farm": true
+    },
+    {
+      "id": "veg",
+      "label": "채소/버섯",
+      "icon": "/images/icons-5.png",
+      "farm": true
+    },
+    {
+      "id": "fruit",
+      "label": "과일/견과",
+      "icon": null,
+      "farm": true
+    },
+    {
+      "id": "sea",
+      "label": "수산/수산가공",
+      "icon": null
+    },
+    {
+      "id": "side",
+      "label": "반찬/양념/가루",
+      "icon": "/images/icons-4.png"
+    },
+    {
+      "id": "meal",
+      "label": "식사대용/간편식",
+      "icon": "/images/icons-2.png"
+    },
+    {
+      "id": "snack",
+      "label": "간식/음료/유제품",
+      "icon": null
+    },
+    {
+      "id": "health",
+      "label": "건강/차",
+      "icon": "/images/icons-3.png"
+    }
+  ],
+  "filters": {
+    "trimester": [
+      {
+        "id": "early",
+        "label": "임신 초기 (1~12주)"
+      },
+      {
+        "id": "mid",
+        "label": "임신 중기 (13~27주)"
+      },
+      {
+        "id": "late",
+        "label": "임신 후기 (28주~)"
+      }
+    ],
+    "certification": [
+      {
+        "id": "유기농",
+        "label": "유기농"
+      },
+      {
+        "id": "무농약",
+        "label": "무농약"
+      }
+    ],
+    "nutrients": [
+      "엽산",
+      "철분",
+      "칼슘",
+      "단백질",
+      "식이섬유",
+      "비타민C"
+    ],
+    "priceRanges": [
+      {
+        "id": "under-5k",
+        "label": "5천원 미만",
+        "min": 0,
+        "max": 5000
+      },
+      {
+        "id": "5k-10k",
+        "label": "5천원 ~ 1만원",
+        "min": 5000,
+        "max": 10000
+      },
+      {
+        "id": "10k-20k",
+        "label": "1만원 ~ 2만원",
+        "min": 10000,
+        "max": 20000
+      },
+      {
+        "id": "over-20k",
+        "label": "2만원 이상",
+        "min": 20000,
+        "max": null
+      }
+    ],
+    "sortOptions": [
+      {
+        "id": "popular",
+        "label": "인기순",
+        "key": "salesCount",
+        "order": "desc"
+      },
+      {
+        "id": "price-asc",
+        "label": "낮은 가격순",
+        "key": "price",
+        "order": "asc"
+      },
+      {
+        "id": "price-desc",
+        "label": "높은 가격순",
+        "key": "price",
+        "order": "desc"
+      },
+      {
+        "id": "discount",
+        "label": "할인율순",
+        "key": "discountRate",
+        "order": "desc"
+      },
+      {
+        "id": "rating",
+        "label": "평점순",
+        "key": "rating.average",
+        "order": "desc"
+      }
+    ]
+  },
+  "badges": {
+    "best": {
+      "label": "BEST",
+      "tone": "green"
+    },
+    "new": {
+      "label": "NEW",
+      "tone": "orange"
+    },
+    "recommend": {
+      "label": "임산부추천",
+      "tone": "pink"
+    }
+  },
+  "shippingPolicy": {
+    "domestic": true,
+    "international": false,
+    "internationalNotice": "신선식품 특성상 해외 배송은 지원하지 않습니다.",
+    "fee": 3000,
+    "freeThreshold": 40000,
+    "extraFee": {
+      "jeju": 3000,
+      "island": 5000
+    },
+    "types": {
+      "cold": {
+        "label": "냉장 배송",
+        "method": "아이스박스 + 아이스팩 포장, 새벽·택배 배송",
+        "leadTime": "주문 다음 날 도착"
+      },
+      "frozen": {
+        "label": "냉동 배송",
+        "method": "아이스박스 + 드라이아이스 포장",
+        "leadTime": "주문 다음 날 도착"
+      },
+      "room": {
+        "label": "상온 배송",
+        "method": "일반 택배 배송",
+        "leadTime": "출고 후 1~2일 이내 도착"
+      }
+    },
+    "notices": [
+      "냉장·상온 상품을 함께 주문하면 냉장 배송으로 함께 보내 드립니다.",
+      "토요일·일요일·공휴일에는 배송이 쉬어 갑니다."
+    ],
+    "exchange": {
+      "period": "신선식품은 수령 당일, 가공식품은 수령 후 7일 이내",
+      "allowed": [
+        "상품 파손·변질",
+        "오배송",
+        "수량 누락"
+      ],
+      "notAllowed": [
+        "신선식품의 단순 변심",
+        "개봉 또는 섭취한 가공식품",
+        "보관 방법 미준수로 인한 변질"
+      ],
+      "contact": "고객센터 1:1 문의 (사진 첨부)"
+    }
+  },
+  "bundle": {
+    "id": 0,
+    "name": "한살림 임산부꾸러미",
+    "summary": "무엇부터 챙겨야 할지 고민이시라면, 임신 기간에 꼭 필요한 재료를 한 상자에 담은 꾸러미로 시작해보세요",
+    "category": "bundle",
+    "originalPrice": 62400,
+    "price": 53000,
+    "discountRate": 15,
+    "badge": "recommend",
+    "hashtags": [
+      "#임산부꾸러미",
+      "#한번에",
+      "#유기농",
+      "#선물추천"
+    ],
+    "images": {
+      "main": "/images/product-00.png",
+      "details": []
+    },
+    "shippingType": "cold",
+    "bundleItems": [
+      1,
+      2,
+      4,
+      7,
+      10,
+      12,
+      20,
+      36
+    ],
+    "rating": {
+      "average": 4.9,
+      "count": 156
+    },
+    "reviews": [
+      {
+        "id": 1,
+        "author": "윤*진",
+        "rating": 5,
+        "date": "2026-10-20",
+        "content": "구성이 알차서 장 보는 시간이 줄었어요."
+      },
+      {
+        "id": 2,
+        "author": "서*린",
+        "rating": 5,
+        "date": "2026-10-11",
+        "content": "임신한 친구에게 선물했는데 정말 좋아했어요."
+      }
+    ]
+  },
+  "products": [
+    {
+      "id": 1,
+      "name": "콩나물(300g)",
+      "summary": "아삭한 식감이 그리우셨다면, 갓 기른 유기농 콩나물로 국과 무침을 준비해보세요",
+      "category": "veg",
+      "originalPrice": 1780,
+      "price": 1600,
+      "discountRate": 10,
+      "badge": "best",
+      "hashtags": [
+        "#유기농",
+        "#콩나물",
+        "#임산부추천"
+      ],
+      "images": {
+        "main": "/images/product-01.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "비타민C",
+        "아스파라긴산"
+      ],
+      "trimester": [
+        "early",
+        "mid"
+      ],
+      "allergens": [
+        "대두"
+      ],
+      "specs": {
+        "unit": "300g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 3일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 437,
+      "rating": {
+        "average": 4.6,
+        "count": 21
+      },
+      "reviews": [
+        {
+          "id": 101,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-02",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 102,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-09",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [
+        45
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 2,
+      "name": "무농약콩으로만든두부(300g)",
+      "summary": "든든한 식물성 단백질이 필요하시다면, 국산콩으로 만든 부드러운 두부를 추천해요",
+      "category": "side",
+      "originalPrice": 2950,
+      "price": 2950,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#국산콩",
+        "#두부",
+        "#단백질",
+        "#임산부추천"
+      ],
+      "images": {
+        "main": "/images/product-02.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "단백질",
+        "칼슘"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "대두"
+      ],
+      "specs": {
+        "unit": "400g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "제조일로부터 7일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 474,
+      "rating": {
+        "average": 4.7,
+        "count": 34
+      },
+      "reviews": [
+        {
+          "id": 201,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-03",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        },
+        {
+          "id": 202,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-10",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        }
+      ],
+      "recipeIds": [
+        50,
+        57
+      ],
+      "certs": [
+        "무농약원료가공식품"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 3,
+      "name": "깻잎(30장)",
+      "summary": "향긋한 밥상을 원하신다면, 무농약 깻잎으로 쌈과 장아찌를 만들어보세요",
+      "category": "veg",
+      "originalPrice": 1450,
+      "price": 1450,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#무농약",
+        "#깻잎",
+        "#철분"
+      ],
+      "images": {
+        "main": "/images/product-03.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "철분",
+        "베타카로틴"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "100g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 4일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 211,
+      "rating": {
+        "average": 4.8,
+        "count": 47
+      },
+      "reviews": [
+        {
+          "id": 301,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-04",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        },
+        {
+          "id": 302,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-11",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 4,
+      "name": "유기농우유(종이팩/900ml)",
+      "summary": "하루 칼슘을 챙기고 싶으시다면, 매일 아침 유기농 우유 한 잔으로 시작해보세요",
+      "category": "snack",
+      "originalPrice": 5110,
+      "price": 4600,
+      "discountRate": 10,
+      "badge": "best",
+      "hashtags": [
+        "#유기농우유",
+        "#칼슘",
+        "#임산부추천"
+      ],
+      "images": {
+        "main": "/images/product-04.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "칼슘",
+        "단백질",
+        "비타민D"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "우유"
+      ],
+      "specs": {
+        "unit": "1L",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~5°C)",
+        "shelfLife": "제조일로부터 10일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 548,
+      "rating": {
+        "average": 4.9,
+        "count": 60
+      },
+      "reviews": [
+        {
+          "id": 401,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-05",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        },
+        {
+          "id": 402,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-12",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        }
+      ],
+      "recipeIds": [
+        60
+      ],
+      "certs": [
+        "유기가공식품",
+        "동물복지"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 5,
+      "name": "우유(범산/200ml)",
+      "summary": "편안한 속을 원하신다면, 첨가물 없이 발효한 유기농 요구르트를 드셔보세요",
+      "category": "snack",
+      "originalPrice": 1200,
+      "price": 1200,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#요구르트",
+        "#유산균",
+        "#장건강"
+      ],
+      "images": {
+        "main": "/images/product-05.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "유산균",
+        "칼슘"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "우유"
+      ],
+      "specs": {
+        "unit": "500ml",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~5°C)",
+        "shelfLife": "제조일로부터 14일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 285,
+      "rating": {
+        "average": 4.5,
+        "count": 73
+      },
+      "reviews": [
+        {
+          "id": 501,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-06",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        },
+        {
+          "id": 502,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-13",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        }
+      ],
+      "recipeIds": [
+        53
+      ],
+      "certs": [
+        "유기가공식품",
+        "HACCP"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 6,
+      "name": "숙주나물(300g)",
+      "summary": "가볍고 산뜻한 반찬이 필요하시다면, 빠르게 데쳐 먹는 숙주나물이 좋아요",
+      "category": "veg",
+      "originalPrice": 2500,
+      "price": 2500,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#숙주나물",
+        "#유기농",
+        "#간단반찬"
+      ],
+      "images": {
+        "main": "/images/product-06.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "비타민C",
+        "식이섬유"
+      ],
+      "trimester": [
+        "early",
+        "mid"
+      ],
+      "allergens": [
+        "녹두"
+      ],
+      "specs": {
+        "unit": "300g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 3일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 322,
+      "rating": {
+        "average": 4.6,
+        "count": 86
+      },
+      "reviews": [
+        {
+          "id": 601,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-07",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        },
+        {
+          "id": 602,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-14",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 7,
+      "name": "상추(150g)",
+      "summary": "엽산을 자연스럽게 챙기고 싶으시다면, 부드러운 유기농 상추로 쌈 한 접시 어떠세요",
+      "category": "veg",
+      "originalPrice": 1850,
+      "price": 1850,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#유기농상추",
+        "#엽산",
+        "#임신초기"
+      ],
+      "images": {
+        "main": "/images/product-07.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "엽산",
+        "식이섬유"
+      ],
+      "trimester": [
+        "early"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "200g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 4일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 359,
+      "rating": {
+        "average": 4.7,
+        "count": 9
+      },
+      "reviews": [
+        {
+          "id": 701,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-08",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 702,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-15",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [
+        40
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 8,
+      "name": "애호박(1개)",
+      "summary": "속 편한 반찬을 찾으신다면, 달큰한 애호박으로 전과 볶음을 만들어보세요",
+      "category": "veg",
+      "originalPrice": 3000,
+      "price": 3000,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#애호박",
+        "#유기농",
+        "#속편한"
+      ],
+      "images": {
+        "main": "/images/product-08.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "비타민A",
+        "칼륨"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "1개 (약 300g)",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 7일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 396,
+      "rating": {
+        "average": 4.8,
+        "count": 22
+      },
+      "reviews": [
+        {
+          "id": 801,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-09",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        },
+        {
+          "id": 802,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-16",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        }
+      ],
+      "recipeIds": [
+        41,
+        49,
+        51
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": "soldout",
+      "popular": true
+    },
+    {
+      "id": 9,
+      "name": "부추(200g)",
+      "summary": "기운이 필요한 날이라면, 향긋한 무농약 부추로 무침과 전을 준비해보세요",
+      "category": "veg",
+      "originalPrice": 1950,
+      "price": 1950,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#부추",
+        "#무농약",
+        "#철분"
+      ],
+      "images": {
+        "main": "/images/product-09.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "철분",
+        "비타민K"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "200g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 3일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 433,
+      "rating": {
+        "average": 4.9,
+        "count": 35
+      },
+      "reviews": [
+        {
+          "id": 901,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-10",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        },
+        {
+          "id": 902,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-17",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        }
+      ],
+      "recipeIds": [
+        45,
+        48,
+        57
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": "paused",
+      "popular": true
+    },
+    {
+      "id": 10,
+      "name": "브로콜리(250g)",
+      "summary": "엽산과 비타민을 한 번에 챙기고 싶으시다면, 데쳐 먹는 유기농 브로콜리를 추천해요",
+      "category": "veg",
+      "originalPrice": 3670,
+      "price": 3300,
+      "discountRate": 10,
+      "badge": "best",
+      "hashtags": [
+        "#브로콜리",
+        "#엽산",
+        "#임산부추천",
+        "#유기농"
+      ],
+      "images": {
+        "main": "/images/product-10.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "엽산",
+        "비타민C",
+        "칼슘"
+      ],
+      "trimester": [
+        "early",
+        "mid"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "1송이 (약 350g)",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 5일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 470,
+      "rating": {
+        "average": 4.5,
+        "count": 48
+      },
+      "reviews": [
+        {
+          "id": 1001,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-11",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        },
+        {
+          "id": 1002,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-18",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        }
+      ],
+      "recipeIds": [
+        51
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 11,
+      "name": "백미/유(4kg)",
+      "summary": "매일 먹는 밥만큼은 건강하게 짓고 싶으시다면, 유기농 백미로 바꿔보세요",
+      "category": "rice",
+      "originalPrice": 22780,
+      "price": 20500,
+      "discountRate": 10,
+      "badge": "best",
+      "hashtags": [
+        "#유기농쌀",
+        "#백미",
+        "#밥맛"
+      ],
+      "images": {
+        "main": "/images/product-11.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "탄수화물"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "4kg",
+        "origin": "국내산",
+        "storage": "실온보관 (서늘한 곳)",
+        "shelfLife": "도정일로부터 3개월"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 407,
+      "rating": {
+        "average": 4.6,
+        "count": 61
+      },
+      "reviews": [
+        {
+          "id": 1101,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-12",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        },
+        {
+          "id": 1102,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-19",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        }
+      ],
+      "recipeIds": [
+        51
+      ],
+      "certs": [
+        "유기농"
+      ],
+      "status": "new",
+      "popular": true
+    },
+    {
+      "id": 12,
+      "name": "꼬마와땅 블루베리요구르트(120ml)",
+      "summary": "간편한 단백질 간식을 찾으신다면, 국산콩으로 만든 유기농 두유를 챙겨보세요",
+      "category": "snack",
+      "originalPrice": 1650,
+      "price": 1400,
+      "discountRate": 15,
+      "badge": "best",
+      "hashtags": [
+        "#두유",
+        "#국산콩",
+        "#간식"
+      ],
+      "images": {
+        "main": "/images/product-12.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "단백질",
+        "이소플라본"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "대두"
+      ],
+      "specs": {
+        "unit": "190ml × 16팩",
+        "origin": "국내산",
+        "storage": "실온보관 (직사광선 피함)",
+        "shelfLife": "제조일로부터 6개월"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 444,
+      "rating": {
+        "average": 4.7,
+        "count": 74
+      },
+      "reviews": [
+        {
+          "id": 1201,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-13",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        },
+        {
+          "id": 1202,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-20",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기가공식품",
+        "HACCP"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 13,
+      "name": "밤고구마(1kg)",
+      "summary": "든든하고 속 편한 간식이 필요하시다면, 포근한 무농약 고구마를 쪄 드셔보세요",
+      "category": "veg",
+      "originalPrice": 4600,
+      "price": 4600,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#고구마",
+        "#무농약",
+        "#변비예방"
+      ],
+      "images": {
+        "main": "/images/product-13.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "식이섬유",
+        "비타민A"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "1.5kg",
+        "origin": "국내산",
+        "storage": "실온보관 (13~15°C)",
+        "shelfLife": "수령 후 2주"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 181,
+      "rating": {
+        "average": 4.8,
+        "count": 87
+      },
+      "reviews": [
+        {
+          "id": 1301,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-14",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 1302,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-21",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 14,
+      "name": "플레인요구르트(범산/450ml)",
+      "summary": "가볍게 칼슘을 챙기고 싶으시다면, 담백한 유기농 저지방 우유를 추천해요",
+      "category": "snack",
+      "originalPrice": 4700,
+      "price": 4700,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#저지방우유",
+        "#칼슘",
+        "#유기농"
+      ],
+      "images": {
+        "main": "/images/product-14.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "칼슘",
+        "단백질"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "우유"
+      ],
+      "specs": {
+        "unit": "900ml",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~5°C)",
+        "shelfLife": "제조일로부터 10일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 218,
+      "rating": {
+        "average": 4.9,
+        "count": 10
+      },
+      "reviews": [
+        {
+          "id": 1401,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-15",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        },
+        {
+          "id": 1402,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-22",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기가공식품",
+        "HACCP"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 15,
+      "name": "로메인(150g)",
+      "summary": "샐러드로 가볍게 드시고 싶다면, 아삭한 유기농 로메인 한 봉이면 충분해요",
+      "category": "veg",
+      "originalPrice": 2000,
+      "price": 2000,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#로메인",
+        "#샐러드",
+        "#엽산"
+      ],
+      "images": {
+        "main": "/images/product-15.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "엽산",
+        "비타민K"
+      ],
+      "trimester": [
+        "early"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "200g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 4일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 255,
+      "rating": {
+        "average": 4.5,
+        "count": 23
+      },
+      "reviews": [
+        {
+          "id": 1501,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-16",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        },
+        {
+          "id": 1502,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-23",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 16,
+      "name": "꼬마새송이버섯(300g)",
+      "summary": "쫄깃한 식감을 좋아하신다면, 구이와 볶음에 두루 쓰는 새송이버섯을 만나보세요",
+      "category": "veg",
+      "originalPrice": 2400,
+      "price": 2400,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#새송이버섯",
+        "#유기농",
+        "#비타민D"
+      ],
+      "images": {
+        "main": "/images/product-16.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "비타민D",
+        "식이섬유"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "300g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 7일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 292,
+      "rating": {
+        "average": 4.6,
+        "count": 36
+      },
+      "reviews": [
+        {
+          "id": 1601,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-17",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        },
+        {
+          "id": 1602,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-24",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        }
+      ],
+      "recipeIds": [
+        39,
+        40,
+        41
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": "paused",
+      "popular": true
+    },
+    {
+      "id": 17,
+      "name": "우엉채(200g)",
+      "summary": "국물 요리에 감칠맛을 더하고 싶으시다면, 유기농 팽이버섯을 넣어보세요",
+      "category": "veg",
+      "originalPrice": 3550,
+      "price": 3550,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#팽이버섯",
+        "#국물요리",
+        "#유기농"
+      ],
+      "images": {
+        "main": "/images/product-17.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "식이섬유",
+        "비타민B"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "150g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "수령 후 7일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 329,
+      "rating": {
+        "average": 4.7,
+        "count": 49
+      },
+      "reviews": [
+        {
+          "id": 1701,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-18",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        },
+        {
+          "id": 1702,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-25",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        }
+      ],
+      "recipeIds": [
+        39,
+        40
+      ],
+      "certs": [
+        "무농약"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 18,
+      "name": "유기농밀크티(180ml)",
+      "summary": "입덧으로 식사가 어려우시다면, 고소한 유기농 곡물 음료로 가볍게 채워보세요",
+      "category": "snack",
+      "originalPrice": 3170,
+      "price": 2850,
+      "discountRate": 10,
+      "badge": "best",
+      "hashtags": [
+        "#곡물음료",
+        "#입덧",
+        "#간편식"
+      ],
+      "images": {
+        "main": "/images/product-18.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "식이섬유",
+        "비타민B"
+      ],
+      "trimester": [
+        "early",
+        "mid"
+      ],
+      "allergens": [
+        "대두",
+        "밀"
+      ],
+      "specs": {
+        "unit": "190ml × 12팩",
+        "origin": "국내산",
+        "storage": "실온보관 (직사광선 피함)",
+        "shelfLife": "제조일로부터 6개월"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 366,
+      "rating": {
+        "average": 4.8,
+        "count": 62
+      },
+      "reviews": [
+        {
+          "id": 1801,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-19",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        },
+        {
+          "id": 1802,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-26",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기가공식품",
+        "HACCP"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 19,
+      "name": "단호박요구르트(120ml)",
+      "summary": "바쁜 아침에도 챙기고 싶으시다면, 한 병으로 끝내는 마시는 요구르트를 추천해요",
+      "category": "snack",
+      "originalPrice": 1400,
+      "price": 1400,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#마시는요구르트",
+        "#유산균",
+        "#아침"
+      ],
+      "images": {
+        "main": "/images/product-19.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "유산균",
+        "칼슘"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "우유"
+      ],
+      "specs": {
+        "unit": "150ml × 4병",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~5°C)",
+        "shelfLife": "제조일로부터 14일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 403,
+      "rating": {
+        "average": 4.9,
+        "count": 75
+      },
+      "reviews": [
+        {
+          "id": 1901,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-20",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 1902,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-27",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [
+        53
+      ],
+      "certs": [
+        "유기가공식품",
+        "HACCP"
+      ],
+      "status": null,
+      "popular": true
+    },
+    {
+      "id": 20,
+      "name": "현미/유(4kg)",
+      "summary": "혈당 관리가 신경 쓰이신다면, 백미에 유기농 현미를 섞어 지어보세요",
+      "category": "rice",
+      "originalPrice": 19000,
+      "price": 19000,
+      "discountRate": 0,
+      "badge": "best",
+      "hashtags": [
+        "#현미",
+        "#식이섬유",
+        "#혈당관리",
+        "#임산부추천"
+      ],
+      "images": {
+        "main": "/images/product-20.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "식이섬유",
+        "마그네슘",
+        "비타민B1"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "2kg",
+        "origin": "국내산",
+        "storage": "실온보관 (서늘한 곳)",
+        "shelfLife": "도정일로부터 3개월"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 440,
+      "rating": {
+        "average": 4.5,
+        "count": 88
+      },
+      "reviews": [
+        {
+          "id": 2001,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-21",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        },
+        {
+          "id": 2002,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-28",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기농"
+      ],
+      "status": "new",
+      "popular": true
+    },
+    {
+      "id": 21,
+      "name": "부침두부(500g)",
+      "summary": "노릇한 두부부침이 생각나신다면, 단단하게 만든 부침두부가 딱이에요",
+      "category": "side",
+      "originalPrice": 4200,
+      "price": 4200,
+      "discountRate": 0,
+      "badge": "recommend",
+      "hashtags": [
+        "#부침두부",
+        "#국산콩",
+        "#단백질"
+      ],
+      "images": {
+        "main": "/images/product-21.jpg",
+        "details": []
+      },
+      "shippingType": "cold",
+      "nutrients": [
+        "단백질",
+        "칼슘"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "대두"
+      ],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "냉장보관 (0~10°C)",
+        "shelfLife": "제조일로부터 7일"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 477,
+      "rating": {
+        "average": 4.6,
+        "count": 11
+      },
+      "reviews": [
+        {
+          "id": 2101,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-22",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        },
+        {
+          "id": 2102,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-01",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        }
+      ],
+      "recipeIds": [
+        52,
+        55
+      ],
+      "certs": [
+        "무농약원료가공식품"
+      ],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 22,
+      "name": "유기농 오트밀(500g)",
+      "summary": "든든한 한 끼가 필요하시다면, 우유에 타 먹는 유기농 미숫가루를 챙겨보세요",
+      "category": "meal",
+      "originalPrice": 7220,
+      "price": 6500,
+      "discountRate": 10,
+      "badge": "new",
+      "hashtags": [
+        "#미숫가루",
+        "#간편식",
+        "#유기농"
+      ],
+      "images": {
+        "main": "/images/product-22.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "식이섬유",
+        "단백질"
+      ],
+      "trimester": [
+        "early",
+        "mid"
+      ],
+      "allergens": [
+        "대두",
+        "밀"
+      ],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "실온보관 (밀봉)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 114,
+      "rating": {
+        "average": 4.7,
+        "count": 24
+      },
+      "reviews": [
+        {
+          "id": 2201,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-23",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        },
+        {
+          "id": 2202,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-02",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": "new",
+      "popular": false
+    },
+    {
+      "id": 23,
+      "name": "고추장(500g)",
+      "summary": "정성 가득한 집밥 맛을 원하신다면, 국산 재료로 담근 재래식 고추장을 써보세요",
+      "category": "side",
+      "originalPrice": 13000,
+      "price": 13000,
+      "discountRate": 0,
+      "badge": "recommend",
+      "hashtags": [
+        "#고추장",
+        "#전통장",
+        "#국산재료"
+      ],
+      "images": {
+        "main": "/images/product-23.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "캡사이신"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "대두",
+        "밀"
+      ],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "냉장보관 권장 (개봉 후)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 151,
+      "rating": {
+        "average": 4.8,
+        "count": 37
+      },
+      "reviews": [
+        {
+          "id": 2301,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-24",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        },
+        {
+          "id": 2302,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-03",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        }
+      ],
+      "recipeIds": [
+        46
+      ],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 24,
+      "name": "유기농 찹쌀가루(500g)",
+      "summary": "우리 밀로 홈베이킹을 하고 싶으시다면, 유기농 밀가루로 시작해보세요",
+      "category": "side",
+      "originalPrice": 6000,
+      "price": 6000,
+      "discountRate": 0,
+      "badge": null,
+      "hashtags": [
+        "#우리밀",
+        "#밀가루",
+        "#홈베이킹"
+      ],
+      "images": {
+        "main": "/images/product-24.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "탄수화물"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "밀"
+      ],
+      "specs": {
+        "unit": "1kg",
+        "origin": "국내산",
+        "storage": "실온보관 (밀봉)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 188,
+      "rating": {
+        "average": 4.9,
+        "count": 50
+      },
+      "reviews": [
+        {
+          "id": 2401,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-25",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        },
+        {
+          "id": 2402,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-04",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        }
+      ],
+      "recipeIds": [
+        49,
+        56,
+        57
+      ],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 25,
+      "name": "산골된장(1kg)",
+      "summary": "구수한 된장찌개가 그리우셨다면, 오래 숙성한 재래식 된장을 추천해요",
+      "category": "side",
+      "originalPrice": 11000,
+      "price": 11000,
+      "discountRate": 0,
+      "badge": "recommend",
+      "hashtags": [
+        "#된장",
+        "#발효식품",
+        "#전통장"
+      ],
+      "images": {
+        "main": "/images/product-25.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "단백질",
+        "발효균"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "대두"
+      ],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "냉장보관 권장 (개봉 후)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 525,
+      "rating": {
+        "average": 4.5,
+        "count": 63
+      },
+      "reviews": [
+        {
+          "id": 2501,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-26",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 2502,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-05",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 26,
+      "name": "마스코바도 비정제원당(500g)",
+      "summary": "간을 건강하게 맞추고 싶으시다면, 간수를 뺀 천일염을 조금씩 써보세요",
+      "category": "side",
+      "originalPrice": 6500,
+      "price": 6500,
+      "discountRate": 0,
+      "badge": null,
+      "hashtags": [
+        "#천일염",
+        "#저염",
+        "#미네랄"
+      ],
+      "images": {
+        "main": "/images/product-26.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "미네랄"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "1kg",
+        "origin": "국내산",
+        "storage": "실온보관 (습기 피함)",
+        "shelfLife": "별도 유통기한 없음"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 262,
+      "rating": {
+        "average": 4.6,
+        "count": 76
+      },
+      "reviews": [
+        {
+          "id": 2601,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-27",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        },
+        {
+          "id": 2602,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-06",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 27,
+      "name": "조선간장(500ml)",
+      "summary": "맑은 국물 맛을 원하신다면, 국산콩으로 빚은 국간장 한 숟가락이면 충분해요",
+      "category": "side",
+      "originalPrice": 13330,
+      "price": 12000,
+      "discountRate": 10,
+      "badge": "recommend",
+      "hashtags": [
+        "#국간장",
+        "#국산콩",
+        "#전통장"
+      ],
+      "images": {
+        "main": "/images/product-27.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "발효균"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "대두"
+      ],
+      "specs": {
+        "unit": "900ml",
+        "origin": "국내산",
+        "storage": "실온보관 (개봉 후 냉장)",
+        "shelfLife": "제조일로부터 2년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 299,
+      "rating": {
+        "average": 4.7,
+        "count": 89
+      },
+      "reviews": [
+        {
+          "id": 2701,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-28",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        },
+        {
+          "id": 2702,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-07",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        }
+      ],
+      "recipeIds": [
+        38,
+        39,
+        42
+      ],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 28,
+      "name": "토마토케첩(300g)",
+      "summary": "새콤한 요리가 당기신다면, 첨가물 없는 유기농 토마토 퓨레로 소스를 만들어보세요",
+      "category": "side",
+      "originalPrice": 6500,
+      "price": 6500,
+      "discountRate": 0,
+      "badge": "new",
+      "hashtags": [
+        "#토마토",
+        "#라이코펜",
+        "#소스"
+      ],
+      "images": {
+        "main": "/images/product-28.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "라이코펜",
+        "비타민C"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "410g",
+        "origin": "국내산",
+        "storage": "실온보관 (개봉 후 냉장)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 336,
+      "rating": {
+        "average": 4.8,
+        "count": 12
+      },
+      "reviews": [
+        {
+          "id": 2801,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-01",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        },
+        {
+          "id": 2802,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-08",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": "new",
+      "popular": false
+    },
+    {
+      "id": 29,
+      "name": "꼬마와땅 유기농조각쌀(500g)",
+      "summary": "속 편한 간식을 만들고 싶으시다면, 유기농 쌀가루로 떡과 빵을 구워보세요",
+      "category": "rice",
+      "originalPrice": 5500,
+      "price": 5500,
+      "discountRate": 0,
+      "badge": "new",
+      "hashtags": [
+        "#쌀가루",
+        "#글루텐프리",
+        "#간식만들기"
+      ],
+      "images": {
+        "main": "/images/product-29.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "탄수화물"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "실온보관 (밀봉)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 373,
+      "rating": {
+        "average": 4.9,
+        "count": 25
+      },
+      "reviews": [
+        {
+          "id": 2901,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-02",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        },
+        {
+          "id": 2902,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-09",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        }
+      ],
+      "recipeIds": [
+        54,
+        60
+      ],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": "new",
+      "popular": false
+    },
+    {
+      "id": 30,
+      "name": "우리밀 흰밀가루(1kg)",
+      "summary": "바삭한 부침과 걸쭉한 소스가 필요하시다면, 국산 감자 전분을 준비해보세요",
+      "category": "side",
+      "originalPrice": 4500,
+      "price": 4500,
+      "discountRate": 0,
+      "badge": null,
+      "hashtags": [
+        "#감자전분",
+        "#국산",
+        "#요리필수"
+      ],
+      "images": {
+        "main": "/images/product-30.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "탄수화물"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "실온보관 (밀봉)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 410,
+      "rating": {
+        "average": 4.5,
+        "count": 38
+      },
+      "reviews": [
+        {
+          "id": 3001,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-03",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        },
+        {
+          "id": 3002,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-10",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        }
+      ],
+      "recipeIds": [
+        50,
+        52
+      ],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 31,
+      "name": "사과식초(500ml)",
+      "summary": "고소한 향을 더하고 싶으시다면, 국산 참깨로 짠 참기름 몇 방울이면 돼요",
+      "category": "side",
+      "originalPrice": 8890,
+      "price": 8000,
+      "discountRate": 10,
+      "badge": "best",
+      "hashtags": [
+        "#참기름",
+        "#국산참깨",
+        "#고소함"
+      ],
+      "images": {
+        "main": "/images/product-31.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "불포화지방산",
+        "비타민E"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "참깨"
+      ],
+      "specs": {
+        "unit": "300ml",
+        "origin": "국내산",
+        "storage": "실온보관 (직사광선 피함)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 747,
+      "rating": {
+        "average": 4.6,
+        "count": 51
+      },
+      "reviews": [
+        {
+          "id": 3101,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-04",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 3102,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-11",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [
+        38,
+        41,
+        45
+      ],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 32,
+      "name": "참기름(300ml)",
+      "summary": "입맛이 없으실 때라면, 새콤한 사과 식초로 무침과 드레싱을 만들어보세요",
+      "category": "side",
+      "originalPrice": 18000,
+      "price": 18000,
+      "discountRate": 0,
+      "badge": null,
+      "hashtags": [
+        "#사과식초",
+        "#입맛살리기",
+        "#발효"
+      ],
+      "images": {
+        "main": "/images/product-32.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "유기산"
+      ],
+      "trimester": [
+        "early",
+        "mid"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "500ml",
+        "origin": "국내산",
+        "storage": "실온보관",
+        "shelfLife": "제조일로부터 2년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 484,
+      "rating": {
+        "average": 4.7,
+        "count": 64
+      },
+      "reviews": [
+        {
+          "id": 3201,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-05",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        },
+        {
+          "id": 3202,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-12",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        }
+      ],
+      "recipeIds": [
+        48
+      ],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 33,
+      "name": "유기농 멥쌀가루(500g)",
+      "summary": "단맛도 건강하게 챙기고 싶으시다면, 정제하지 않은 유기농 설탕을 써보세요",
+      "category": "side",
+      "originalPrice": 5500,
+      "price": 5500,
+      "discountRate": 0,
+      "badge": null,
+      "hashtags": [
+        "#비정제설탕",
+        "#유기농",
+        "#공정무역"
+      ],
+      "images": {
+        "main": "/images/product-33.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "미네랄"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "1kg",
+        "origin": "브라질",
+        "storage": "실온보관 (습기 피함)",
+        "shelfLife": "별도 유통기한 없음"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 121,
+      "rating": {
+        "average": 4.8,
+        "count": 77
+      },
+      "reviews": [
+        {
+          "id": 3301,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-06",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        },
+        {
+          "id": 3302,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-13",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        }
+      ],
+      "recipeIds": [
+        42,
+        43,
+        44
+      ],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 34,
+      "name": "유기농 단백질가루(코코아맛)",
+      "summary": "달콤한 휴식이 필요하시다면, 따뜻한 우유에 유기농 코코아를 타 드셔보세요",
+      "category": "health",
+      "originalPrice": 11000,
+      "price": 11000,
+      "discountRate": 0,
+      "badge": "new",
+      "hashtags": [
+        "#코코아",
+        "#마그네슘",
+        "#휴식"
+      ],
+      "images": {
+        "main": "/images/product-34.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "마그네슘",
+        "철분"
+      ],
+      "trimester": [
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "우유"
+      ],
+      "specs": {
+        "unit": "300g",
+        "origin": "페루",
+        "storage": "실온보관 (밀봉)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 158,
+      "rating": {
+        "average": 4.9,
+        "count": 90
+      },
+      "reviews": [
+        {
+          "id": 3401,
+          "author": "최*희",
+          "rating": 4,
+          "date": "2026-10-07",
+          "content": "배송이 빨랐고 상태도 좋았습니다."
+        },
+        {
+          "id": 3402,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-14",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        }
+      ],
+      "recipeIds": [
+        56
+      ],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": "new",
+      "popular": false
+    },
+    {
+      "id": 35,
+      "name": "우리쌀 떡국떡(1kg)",
+      "summary": "입덧으로 속이 불편하시다면, 구수한 현미 누룽지를 끓여 드셔보세요",
+      "category": "meal",
+      "originalPrice": 7000,
+      "price": 7000,
+      "discountRate": 0,
+      "badge": null,
+      "hashtags": [
+        "#누룽지",
+        "#입덧",
+        "#속편한"
+      ],
+      "images": {
+        "main": "/images/product-35.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "식이섬유",
+        "탄수화물"
+      ],
+      "trimester": [
+        "early"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "300g",
+        "origin": "국내산",
+        "storage": "실온보관 (밀봉)",
+        "shelfLife": "제조일로부터 6개월"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 195,
+      "rating": {
+        "average": 4.5,
+        "count": 13
+      },
+      "reviews": [
+        {
+          "id": 3501,
+          "author": "한*솔",
+          "rating": 5,
+          "date": "2026-10-08",
+          "content": "가족 모두 잘 먹고 있어요. 꾸러미로 받으니 편해요."
+        },
+        {
+          "id": 3502,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-15",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 36,
+      "name": "유자청(1kg)",
+      "summary": "카페인 없이 따뜻한 차를 찾으신다면, 향긋한 유기농 유자청을 추천해요",
+      "category": "health",
+      "originalPrice": 17650,
+      "price": 15000,
+      "discountRate": 15,
+      "badge": "recommend",
+      "hashtags": [
+        "#유자차",
+        "#비타민C",
+        "#무카페인",
+        "#임산부추천"
+      ],
+      "images": {
+        "main": "/images/product-36.jpg",
+        "details": [
+          "/images/product-36-1.png",
+          "/images/product-36-2.png"
+        ]
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "비타민C"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [],
+      "specs": {
+        "unit": "500g",
+        "origin": "국내산",
+        "storage": "냉장보관 (개봉 후)",
+        "shelfLife": "제조일로부터 1년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 232,
+      "rating": {
+        "average": 4.6,
+        "count": 26
+      },
+      "reviews": [
+        {
+          "id": 3601,
+          "author": "김*연",
+          "rating": 5,
+          "date": "2026-10-09",
+          "content": "임신 초기에 입덧이 심했는데 이건 잘 먹을 수 있었어요."
+        },
+        {
+          "id": 3602,
+          "author": "이*나",
+          "rating": 4,
+          "date": "2026-10-16",
+          "content": "양이 넉넉하고 맛이 좋아요. 재구매 의사 있어요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [],
+      "status": null,
+      "popular": false
+    },
+    {
+      "id": 37,
+      "name": "유기농 보리차 티백",
+      "summary": "물 대신 구수한 차를 원하신다면, 카페인 없는 유기농 보리차를 우려보세요",
+      "category": "health",
+      "originalPrice": 6000,
+      "price": 6000,
+      "discountRate": 0,
+      "badge": "new",
+      "hashtags": [
+        "#보리차",
+        "#무카페인",
+        "#임산부추천"
+      ],
+      "images": {
+        "main": "/images/product-37.jpg",
+        "details": []
+      },
+      "shippingType": "room",
+      "nutrients": [
+        "무카페인"
+      ],
+      "trimester": [
+        "early",
+        "mid",
+        "late"
+      ],
+      "allergens": [
+        "보리"
+      ],
+      "specs": {
+        "unit": "10g × 30티백",
+        "origin": "국내산",
+        "storage": "실온보관 (습기 피함)",
+        "shelfLife": "제조일로부터 2년"
+      },
+      "stock": 50,
+      "maxQuantity": 10,
+      "salesCount": 269,
+      "rating": {
+        "average": 4.7,
+        "count": 39
+      },
+      "reviews": [
+        {
+          "id": 3701,
+          "author": "박*지",
+          "rating": 5,
+          "date": "2026-10-10",
+          "content": "신선하고 포장이 꼼꼼해서 믿고 주문합니다."
+        },
+        {
+          "id": 3702,
+          "author": "정*아",
+          "rating": 5,
+          "date": "2026-10-17",
+          "content": "아이 생각하면서 고른 재료라 마음이 편해요."
+        }
+      ],
+      "recipeIds": [],
+      "certs": [
+        "유기가공식품"
+      ],
+      "status": "new",
+      "popular": false
+    }
+  ],
+  "recipes": [
+    {
+      "id": 38,
+      "name": "소고기 미역국",
+      "summary": "칼슘과 철분을 함께 챙기는 산모 대표 국",
+      "image": "/images/product-38.jpg",
+      "productIds": [
+        27,
+        31
+      ]
+    },
+    {
+      "id": 39,
+      "name": "소고기 버섯 전골",
+      "summary": "버섯 감칠맛 가득한 따뜻한 전골",
+      "image": "/images/product-39.jpg",
+      "productIds": [
+        16,
+        17,
+        27
+      ]
+    },
+    {
+      "id": 40,
+      "name": "소고기 샤브샤브",
+      "summary": "채소와 함께 담백하게 즐기는 샤브샤브",
+      "image": "/images/product-40.jpg",
+      "productIds": [
+        16,
+        17,
+        7
+      ]
+    },
+    {
+      "id": 41,
+      "name": "소고기 채소볶음",
+      "summary": "철분 보충에 좋은 한 그릇 볶음",
+      "image": "/images/product-41.jpg",
+      "productIds": [
+        8,
+        16,
+        31
+      ]
+    },
+    {
+      "id": 42,
+      "name": "우엉 조림",
+      "summary": "식이섬유 가득한 달콤짭짤 밑반찬",
+      "image": "/images/product-42.jpg",
+      "productIds": [
+        27,
+        33
+      ]
+    },
+    {
+      "id": 43,
+      "name": "소고기 장조림",
+      "summary": "두고 먹기 좋은 단백질 반찬",
+      "image": "/images/product-43.jpg",
+      "productIds": [
+        27,
+        33
+      ]
+    },
+    {
+      "id": 44,
+      "name": "단호박 찜",
+      "summary": "포근하고 달콤한 간식",
+      "image": "/images/product-44.jpg",
+      "productIds": [
+        33
+      ]
+    },
+    {
+      "id": 45,
+      "name": "소고기 나물 비빔",
+      "summary": "여러 나물을 한 번에 즐기는 비빔",
+      "image": "/images/product-45.jpg",
+      "productIds": [
+        1,
+        9,
+        31
+      ]
+    },
+    {
+      "id": 46,
+      "name": "생선 조림",
+      "summary": "오메가3를 챙기는 생선 반찬",
+      "image": "/images/product-46.jpg",
+      "productIds": [
+        27,
+        23
+      ]
+    },
+    {
+      "id": 47,
+      "name": "시금치 나물",
+      "summary": "엽산 가득한 기본 나물",
+      "image": "/images/product-47.jpg",
+      "productIds": [
+        27,
+        31
+      ]
+    },
+    {
+      "id": 48,
+      "name": "부추 무침",
+      "summary": "새콤하게 입맛 살리는 무침",
+      "image": "/images/product-48.jpg",
+      "productIds": [
+        9,
+        32,
+        31
+      ]
+    },
+    {
+      "id": 49,
+      "name": "우리가족 얼굴피자",
+      "summary": "아이와 함께 채소로 얼굴을 꾸미는 피자",
+      "image": "/images/product-49.jpg",
+      "productIds": [
+        8,
+        24
+      ]
+    },
+    {
+      "id": 50,
+      "name": "봄동 한우말이",
+      "summary": "달큰한 봄동으로 돌돌 만 한우",
+      "image": "/images/product-50.jpg",
+      "productIds": [
+        2,
+        30
+      ]
+    },
+    {
+      "id": 51,
+      "name": "사과볶음밥",
+      "summary": "사과의 단맛을 더한 한 그릇 볶음밥",
+      "image": "/images/product-51.jpg",
+      "productIds": [
+        11,
+        8,
+        10
+      ]
+    },
+    {
+      "id": 52,
+      "name": "땅콩과자",
+      "summary": "고소한 땅콩으로 만드는 단백질 간식",
+      "image": "/images/product-52.jpg",
+      "productIds": [
+        21,
+        30
+      ]
+    },
+    {
+      "id": 53,
+      "name": "또띠아 견과칩",
+      "summary": "또띠아로 바삭하게 구운 견과칩",
+      "image": "/images/product-53.jpg",
+      "productIds": [
+        5,
+        19
+      ]
+    },
+    {
+      "id": 54,
+      "name": "고구마팥 구움찰떡",
+      "summary": "고구마와 팥을 넣어 구운 찰떡",
+      "image": "/images/product-54.jpg",
+      "productIds": [
+        29,
+        33
+      ]
+    },
+    {
+      "id": 55,
+      "name": "양파크래커",
+      "summary": "양파 향이 솔솔 나는 바삭한 크래커",
+      "image": "/images/product-55.jpg",
+      "productIds": [
+        21,
+        27
+      ]
+    },
+    {
+      "id": 56,
+      "name": "가또 쇼콜라",
+      "summary": "진한 초콜릿 케이크, 가또 쇼콜라",
+      "image": "/images/product-56.jpg",
+      "productIds": [
+        34,
+        24,
+        33
+      ]
+    },
+    {
+      "id": 57,
+      "name": "단호박 떡만두",
+      "summary": "단호박 반죽으로 빚은 떡만두",
+      "image": "/images/product-57.jpg",
+      "productIds": [
+        2,
+        9,
+        24
+      ]
+    },
+    {
+      "id": 58,
+      "name": "고사리 불고기",
+      "summary": "고사리를 듬뿍 넣은 불고기",
+      "image": "/images/product-58.jpg",
+      "productIds": [
+        16,
+        27,
+        33
+      ]
+    },
+    {
+      "id": 59,
+      "name": "동태 밥전",
+      "summary": "동태살과 밥으로 부친 든든한 전",
+      "image": "/images/product-59.jpg",
+      "productIds": [
+        9,
+        8,
+        24
+      ]
+    },
+    {
+      "id": 60,
+      "name": "자동차 치아바타 샌드위치",
+      "summary": "아이가 좋아하는 자동차 모양 샌드위치",
+      "image": "/images/product-60.jpg",
+      "productIds": [
+        29,
+        4,
+        33
+      ]
+    }
+  ],
+  "assets": {
+    "logos": {
+      "header": "/images/imgi_29_par_logo.png",
+      "footer": "/images/imgi_34_bg_footer_logo.png"
+    },
+    "banners": [
+      "/images/banner-1.png",
+      "/images/banner-2.jpg",
+      "/images/banner-3.jpg",
+      "/images/banner-4.png",
+      "/images/banner-5.png"
+    ],
+    "featureIcons": [
+      {
+        "image": "/images/icons-1.png",
+        "label": "알뜰한 가격"
+      },
+      {
+        "image": "/images/icons-2.png",
+        "label": "간편한 반찬"
+      },
+      {
+        "image": "/images/icons-3.png",
+        "label": "건강 관리"
+      },
+      {
+        "image": "/images/icons-4.png",
+        "label": "바른 양념"
+      },
+      {
+        "image": "/images/icons-5.png",
+        "label": "신선한 채소"
+      }
+    ],
+    "popup": {
+      "notice": "/images/imgi_2_pop_notice.jpg",
+      "close": "/images/imgi_32_btn_pop_close.png"
+    },
+    "buttons": {
+      "default": "/images/imgi_30_button.png",
+      "datePrev": "/images/imgi_35_btn_date_prev.png",
+      "dateNext": "/images/imgi_36_btn_date_next.png"
+    },
+    "instagram": "/images/icon.png",
+    "sns": [
+      {
+        "id": "facebook",
+        "image": "/images/sns-1.png"
+      },
+      {
+        "id": "instagram",
+        "image": "/images/sns-2.png"
+      },
+      {
+        "id": "youtube",
+        "image": "/images/sns-3.png"
+      },
+      {
+        "id": "kakaotalk",
+        "image": "/images/sns-4.png"
+      },
+      {
+        "id": "blog",
+        "image": "/images/imgi_26_icon_blog.png"
+      }
+    ]
+  }
+}

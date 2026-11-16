@@ -12,7 +12,7 @@ PC에서는 가운데 모바일 화면과 왼쪽 검색 패널을, 모바일에�
 | 배포 사이트 | [hansalim-kit.vercel.app](https://hansalim-kit.vercel.app) |
 | 기획서 (9p) | [docs/hansalim-planning.pdf](docs/hansalim-planning.pdf) |
 | 원본 사이트 | [mom.hansalim.or.kr](https://mom.hansalim.or.kr/om/pw/pw_main.do) |
-| 피그마 | (공유 링크 추가) |
+| 피그마 | [일체형 한살림](https://www.figma.com/design/Zct08BLGNfwiW4aNBnLFyl/%EC%9D%BC%EC%B2%B4%ED%98%95-%ED%95%9C%EC%82%B4%EB%A6%BC?node-id=0-1) |
 
 ## 프로젝트 개요
 
